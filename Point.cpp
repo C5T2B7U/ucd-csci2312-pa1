@@ -48,20 +48,12 @@ Point::Point(double newX, double newY, double newZ)     // three-argument constr
 double Point::distanceTo(const Point& otherPoint) const
 {
     // FORMULA IS: sqrt( ((x2-x1)^2) + ((y2-y1)^2) + ((z2-z1)^2) );
-    // NOTE:  EXPRESSION FOR SQUARE ROOT IS INHERENTLY > 0
-        // IF EXPRESSION = 0 THEN RETURN 0;
-        // ELSE RETURN sqrt(EXPRESSION);
-    double innerExpression = 0.0;
+    // NOTE:  EXPRESSION FOR SQUARE ROOT IS INHERENTLY >= 0
 
-    innerExpression = (
-                        pow((x-otherPoint.getX()),2) +
-                        pow((y-otherPoint.getY()),2) +
-                        pow((z-otherPoint.getZ()),2)
-                      );
-
-    if (innerExpression == 0.0)
-        return 0.0;
-    else
-        return sqrt(innerExpression);
+    return sqrt(
+                    pow((x-otherPoint.getX()),2) +
+                    pow((y-otherPoint.getY()),2) +
+                    pow((z-otherPoint.getZ()),2)
+               );
 }
 
