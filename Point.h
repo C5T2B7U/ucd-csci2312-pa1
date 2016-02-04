@@ -13,17 +13,17 @@ private:
 public:
     // Constructors
     Point();                      // default constructor
-    Point(double x, double y, double z);    // three-argument constructor
+    Point(double newX, double newY, double newZ);    // three-argument constructor
 
     // Mutator methods
-    void setX(double newX);
-    void setY(double newY);
-    void setZ(double newZ);
+    void setX(double newX) {x = newX};
+    void setY(double newY) {y = newY};
+    void setZ(double newZ) {z = newZ};
 
     // Accessor methods
-    double getX() const;
-    double getY() const;
-    double getZ() const;
+    double getX() const {return x};
+    double getY() const {return y};
+    double getZ() const {return z};
     
 };
 
