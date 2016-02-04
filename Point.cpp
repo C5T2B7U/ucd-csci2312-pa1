@@ -7,6 +7,7 @@
  */
 
 
+#include <iostream>     // FOR cout
 #include <cmath>        // FOR pow(), sqrt()
 using namespace std;
 
@@ -58,8 +59,11 @@ double Point::distanceTo(const Point& otherPoint) const
                         pow((z-otherPoint.getZ()),2)
                       );
 
+    cout << "  DIST = " << sqrt(innerExpression) << "  ";
+
     if (innerExpression == 0.0)
         return 0.0;
     else
         return sqrt(innerExpression);
 }
+

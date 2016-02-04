@@ -4,6 +4,8 @@
 // Implement computeArea() function
 //
 
+
+#include <iostream>     // FOR cout
 #include <cmath>        // FOR sqrt()
 using namespace std;
 
@@ -28,5 +30,8 @@ double computeArea(const Point &a, const Point &b, const Point &c)
     y = b.distanceTo(c);
     z = c.distanceTo(a);
 
-    return ((1/4) * sqrt( (x+y+z) * (y+z-x) * (x+z-y) * (x+y-z) ));
+    cout << "  AREA = " << ((1.0/4.0) * sqrt( (x+y+z) * (y+z-x) * (x+z-y) * (x+y-z) )) << "  ";
+
+    return ((1.0/4.0) * sqrt( (x+y+z) * (y+z-x) * (x+z-y) * (x+y-z) ));
+
 }
