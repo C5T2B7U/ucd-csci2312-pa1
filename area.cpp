@@ -4,6 +4,9 @@
 // Implement computeArea() function
 //
 
+#include <cmath>        // FOR sqrt()
+using namespace std;
+
 #include "Point.h"      // include Point class
 
 double computeArea(const Point &a, const Point &b, const Point &c)
@@ -13,5 +16,17 @@ double computeArea(const Point &a, const Point &b, const Point &c)
     // (hint: use Heron's Formula), and returns it as a
     // double-precision floating point number.
 
-    return 1.0;
+    // HERON'S FORMULA:  A = ((1/4) * sqrt( (x+y+z) * (y+z-x) * (x+z-y) * (x+y-z) ));
+        // SUCH THAT x,y, and z express the length of the sides
+        // of a triangle comprised of three points
+
+    // DEFINE LENGTHS OF SIDES OF TRIANGLE
+    double x, y, z;
+    z = y = x = 0.0;
+
+    x = a.distanceTo(b);
+    y = b.distanceTo(c);
+    z = c.distanceTo(a);
+
+    return ((1/4) * sqrt( (x+y+z) * (y+z-x) * (x+z-y) * (x+y-z) ));
 }
