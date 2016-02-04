@@ -1,10 +1,19 @@
 ## CSCI 2312: Programming Assignment 1
 
+.
 
-##### GITHUB USER:  [C5T2B7U](https://github.com/C5T2B7U/)
-##### CSCI 2312-002
-##### SPRING 2016
-##### https://github.com/C5T2B7U/ucd-csci2312-pa1
+#### GITHUB USER:  [C5T2B7U](https://github.com/C5T2B7U/)
+#### CSCI 2312-002
+#### SPRING 2016
+#### https://github.com/C5T2B7U/ucd-csci2312-pa1
+
+.
+
+#### Compiler:
+```
+CLion 1.2.4 using GNU G++ 4:4.8.2-1ubuntu6
+on Linux Cinnamon Mint 17.3 x64 running as VM
+```
 
 .
 
@@ -107,10 +116,3 @@ public:
 ```
 
 .
-
-
-* * *
-
-<font size="-1">ACKNOWLEDGEMENT: Modelled after CS11 Lab 1 at Caltech.</font>
-
-<font size="-1">Some content Copyright (C) 2004-2010, California Institute of Technology.</font>
