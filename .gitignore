@@ -1,5 +1,6 @@
-# Unwanted .idea .xml files
+# Unwanted .idea files
 *.xml
+*.iml
 
 # Compiled Object files
 *.slo
