@@ -5,11 +5,12 @@
 //
 
 
-#include <iostream>     // FOR cout
 #include <cmath>        // FOR sqrt()
 using namespace std;
 
+
 #include "Point.h"      // include Point class
+
 
 double computeArea(const Point &a, const Point &b, const Point &c)
 {
@@ -29,8 +30,6 @@ double computeArea(const Point &a, const Point &b, const Point &c)
     x = a.distanceTo(b);
     y = b.distanceTo(c);
     z = c.distanceTo(a);
-
-    cout << "  AREA = " << ((1.0/4.0) * sqrt( (x+y+z) * (y+z-x) * (x+z-y) * (x+y-z) )) << "  ";
 
     return ((1.0/4.0) * sqrt( (x+y+z) * (y+z-x) * (x+z-y) * (x+y-z) ));
 
