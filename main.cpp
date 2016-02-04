@@ -31,11 +31,11 @@ int main() {
 
     // point tests
     test_point_smoketest(ec);
-    test_point_getset(ec, NumIters);
-    test_point_figures(ec, NumIters);
+//    test_point_getset(ec, NumIters);
+//    test_point_figures(ec, NumIters);
 
     // area tests
-    test_area(ec, NumIters);
+//    test_area(ec, NumIters);
 
 
     return 0;
