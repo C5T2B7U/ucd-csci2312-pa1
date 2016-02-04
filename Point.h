@@ -13,7 +13,7 @@ private:
 public:
     // Constructors
     Point();                      // default constructor
-    Point(double x, double y, double z);    // two-argument constructor
+    Point(double x, double y, double z);    // three-argument constructor
 
     // Mutator methods
     void setX(double newX);

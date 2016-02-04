@@ -1,4 +1,7 @@
-//
-// Created by trog on 2/3/16.
-//
-
+/*
+ *
+ * Point.cpp
+ *
+ * Implementation file for Point.h
+ *
+ */
