@@ -109,7 +109,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(0, 0, 0), p2(3, 0, 0), p3(0, 4, 0);
 
             double diff = computeArea(p1, p2, p3) - 6.0;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -120,7 +120,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(0, 0, 0), p2(3, 0, 0), p3(3, 0, 0);
 
             double diff = computeArea(p1, p2, p3) - 0.0;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -131,7 +131,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(0, 0, 0), p2(0, 0, 0), p3(0, 0, 0);
 
             double diff = computeArea(p1, p2, p3) - 0.0;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -142,7 +142,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(1, 0, 0), p2(0, 1, 0), p3(0, 0, 1);
 
             double diff = computeArea(p1, p2, p3) - 0.866025;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -153,7 +153,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(-1, 0, 0), p2(0, -1, 0), p3(0, 0, -1);
 
             double diff = computeArea(p1, p2, p3) - 0.866025;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -164,7 +164,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(-1, -1, -1), p2(-1, -1, -1), p3(-1, -1, -1);
 
             double diff = computeArea(p1, p2, p3) - 0.0;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -175,7 +175,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(0, 0, 0), p2(-3, 0, 0), p3(0, -4, 0);
 
             double diff = computeArea(p1, p2, p3) - 6.0;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -186,7 +186,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(0, 0, 0), p2(10000, 0, 0), p3(0, .00001, 0);
 
             double diff = computeArea(p1, p2, p3) - 0.05;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
             ec.result(pass);
         }
@@ -196,7 +196,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(0, 0, 0), p2(3000000, 0, 0), p3(0, 4000000, 0);
 
             double diff = computeArea(p1, p2, p3) - 6e+12;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
@@ -207,7 +207,7 @@ void test_point_figures(ErrorContext &ec, unsigned int numRuns) {
             Point p1(1, -64, -23), p2(-.004, 107, -42.5), p3(-34.6, -4000000.7, 3600.8);
 
             double diff = computeArea(p1, p2, p3) - 38741777.098192796111;
-/* DEBUG */     std::cout << "DIFF = " << diff << "  -->  ";
+
             pass = diff * diff < POINT_SQUARE_ERROR;
 
             ec.result(pass);
