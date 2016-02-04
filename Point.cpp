@@ -7,6 +7,9 @@
  */
 
 
+#include "Point.h"      // included Point class header
+
+
 // Constructors
 Point::Point()                                 // default constructor
 {
